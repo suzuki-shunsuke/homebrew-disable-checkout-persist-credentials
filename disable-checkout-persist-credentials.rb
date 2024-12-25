@@ -6,21 +6,21 @@ class DisableCheckoutPersistCredentials < Formula
   desc "Disable actions/checkout's persist-credentials
 "
   homepage "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.0/disable-checkout-persist-credentials_darwin_amd64.tar.gz"
-      sha256 "4140d1a0ed63563aa74731798b15694145ea5e13411789f609875846aebcacff"
+      url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.1/disable-checkout-persist-credentials_darwin_amd64.tar.gz"
+      sha256 "1a09af1ea0d9ab28cf83b00cc85335d421a503819af1657baafb44e04b41317b"
 
       def install
         bin.install "disable-checkout-persist-credentials"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.0/disable-checkout-persist-credentials_darwin_arm64.tar.gz"
-      sha256 "833343886bdb38ca10995642f031c1c4e42325ab7a5ab7950a2027aeacc86465"
+      url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.1/disable-checkout-persist-credentials_darwin_arm64.tar.gz"
+      sha256 "b3e89ea69302feb7715955792604df75bc5dbe504106cc2e086ff0130c5be9c8"
 
       def install
         bin.install "disable-checkout-persist-credentials"
@@ -31,8 +31,8 @@ class DisableCheckoutPersistCredentials < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.0/disable-checkout-persist-credentials_linux_amd64.tar.gz"
-        sha256 "93cef4a062f1f72a21ca9d722511749f5d53c34aa923dfbc7fbe1a1a2d7f41cc"
+        url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.1/disable-checkout-persist-credentials_linux_amd64.tar.gz"
+        sha256 "619186e2cf382fc5dedf163fa6ca7dafffbc37b85b799b78009a9ac63eb48416"
 
         def install
           bin.install "disable-checkout-persist-credentials"
@@ -41,8 +41,8 @@ class DisableCheckoutPersistCredentials < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.0/disable-checkout-persist-credentials_linux_arm64.tar.gz"
-        sha256 "0968ad58c380702f8558ebb6b8489999bdbb6d3b4ee59c5aa6ebcc5382abbde2"
+        url "https://github.com/suzuki-shunsuke/disable-checkout-persist-credentials/releases/download/v0.1.1/disable-checkout-persist-credentials_linux_arm64.tar.gz"
+        sha256 "a2f92f17c699b748641e080c152a265613ad8b8f015aff5a398b8859e0a70fce"
 
         def install
           bin.install "disable-checkout-persist-credentials"
